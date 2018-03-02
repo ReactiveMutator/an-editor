@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Editor</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+<body>
+	<script src="text/glyph.js"></script>
+	<script src="text/line.js"></script>
+	<script src="text/text.js"></script>
+
+	<div id = "test-editor"></div>
+	<script src="cursor.js"></script>
+	<script src="editor.js"></script>
+	<script>
+		var testEditor = new MonospaceTextEditor({
+			letterWidth: 12,
+			lineHeight: 24
+		}, [
+			"Text",
+			"Alpha",
+			"Beta"
+		]);
+		testEditor.edit(
+			document.querySelector("#test-editor")
+		);
+	</script>
+</body>
+</html>

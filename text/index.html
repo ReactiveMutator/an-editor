@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Pixel Art Editor :: Text</title>
+    </head>
+    <body>
+        <script src = "glyph.js"></script>
+        
+        <!--<div id = "test-glyph"></div>
+        <script>
+            var testGlyph = new Glyph("T");
+            testGlyph.write(document.querySelector("#test-glyph"));
+            testGlyph.setActive();
+            testGlyph.replace(
+                new Glyph("A")
+            );
+        </script>-->
+
+        <script src = "line.js"></script>
+        
+        <!--<div id = "test-text-line"></div>
+        <script>
+            var testTextLine = new MonospaceTextLine(
+                12, 24, "Text line"
+            );
+            testTextLine.write(document.querySelector("#test-text-line"));
+        </script>-->
+
+        <script src = "text.js"></script>
+        
+        <div id = "test-text"></div>
+        <script>
+            var testText = new MonospaceText(12, 24, [
+                "First line",
+                "Second line",
+                "Third",
+                "Fourth"
+            ]);
+            testText.write(document.querySelector("#test-text"));
+        </script>
+    </body>
+</html>
